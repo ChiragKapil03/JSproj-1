@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: #eaf4f4;
+        }
+
+        #mainDiv{
+            height: 400px;
+            width: 400px;
+            margin-inline: auto;
+            margin-block: auto;
+            background-color: white; 
+            border-radius: 20px;
+            box-shadow: 4px 4px 35px 12px rgba(128, 128, 128, 0.592);
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            justify-content: center;
+            align-items: center;
+            /* justify-content: space-evenly; */
+            align-content:space-evenly;
+        }
+
+        #circle{
+            background-color:aqua;
+            height: 150px;
+            width: 150px;
+            border-radius: 80px;
+        }
+
+        #shape_container{
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #shape_container svg{
+            height: 80px;
+            width: 80px;
+       }
+
+        .buttons{
+            display: flex;
+            gap: 40px;
+        }
+
+        .buttons button{
+            padding: 10px;
+            color: white;
+            background-color: black;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 18px;
+            width: 160px;
+        }
+
+        button:hover{
+            box-shadow: 0px 2px 8px 1px gray;
+            cursor: pointer;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="mainDiv">
+            <div id="circle">
+                <div id="shape_container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="none" viewBox="0 0 200 200" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><path fill="url(&quot;#SvgjsLinearGradient1001&quot;)" d="M165.963 134.037c-5.467 5.467-14.332 5.467-19.799 0l-24.137-24.138c-5.468-5.467-5.468-14.331 0-19.799l24.137-24.137c5.467-5.467 14.332-5.467 19.799 0L190.101 90.1c5.467 5.468 5.467 14.332 0 19.799l-24.138 24.138Zm-112.127 0c-5.467 5.467-14.332 5.467-19.8 0L9.9 109.899c-5.468-5.467-5.468-14.331 0-19.799l24.137-24.137c5.467-5.467 14.332-5.467 19.799 0L77.973 90.1c5.468 5.468 5.468 14.332 0 19.799l-24.137 24.138ZM109.9 190.1c-5.468 5.468-14.332 5.468-19.8 0l-24.137-24.137c-5.467-5.467-5.467-14.332 0-19.799l24.138-24.137c5.467-5.468 14.331-5.468 19.799 0l24.137 24.137c5.467 5.467 5.467 14.332 0 19.799L109.9 190.1Zm0-112.127c-5.468 5.468-14.332 5.468-19.8 0L65.963 53.836c-5.467-5.468-5.467-14.332 0-19.8L90.101 9.9c5.467-5.467 14.331-5.467 19.799 0l24.137 24.138c5.467 5.467 5.467 14.331 0 19.799L109.9 77.973Z"></path><defs><linearGradient gradientTransform="rotate(0 0.5 0.5)" id="SvgjsLinearGradient1001"><stop stop-opacity=" 1" stop-color="rgba(105, 234, 203)" offset="0"></stop><stop stop-opacity=" 1" stop-color="rgba(234, 204, 248)" offset="0.48"></stop><stop stop-opacity=" 1" stop-color="rgba(102, 84, 241)" offset="1"></stop></linearGradient></defs></svg>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="color_button">Change Color</button>
+                <button id="shape_button">Change Shape</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
